@@ -1,0 +1,21 @@
+.calltoaction {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.calltoaction__wrap {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    background: #292f36;
+    border-radius: 70px;
+    text-align: center;
+}
+
+.calltoaction__title {
+    color: #fff;
+}
+
+.calltoaction__text {
+    color: #fff;
+    font-size: 22px;
+}

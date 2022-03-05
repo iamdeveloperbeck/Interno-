@@ -1,0 +1,126 @@
+.project {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.project__title.centered__title {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-p.project__p {
+    text-align: center;
+}
+
+.project__items {
+    padding-top: 60px;
+}
+
+.project__item {
+    margin-bottom: 60px;
+    padding-right: 0;
+}
+
+.item__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project__col-6 {
+    width: 50%;
+}
+
+.project__item-link {
+    width: 100%;
+}
+
+.project__item-link img {
+    width: 100%;
+    border-radius: 0 80px 0 0;
+}
+
+.project__details {
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__title-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.project__name {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #292f36;
+    font-weight: 400;
+    transition: color .2s;
+}
+
+.project__name:hover {
+    color: var(--color-current);
+}
+
+.project__categorey {
+    font-family: var(--font-base);
+    font-size: 22px;
+    font-weight: 400;
+    color: #4d5053;
+    transition: color .2s;
+}
+
+.project__categorey:hover {
+    color: var(--color-current);
+}
+
+.project__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    background: var(--color-bg);
+    transition: background .2s;
+}
+
+.project__link:hover {
+    background: var(--color-current);
+}
+
+@media screen and (max-width: 767px) {
+    .item__row {
+        grid-template-columns: 1fr;
+    }
+
+    .project__title.centered__title {
+        font-size: 40px;
+    }
+
+    .header-p.project__p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .project__title.centered__title {
+        font-size: 30px;
+    }
+
+    .project__details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project__title-wrap {
+        margin-bottom: 10px;
+    }
+
+    .project__name {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,128 @@
+.blog {
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.blog__wrap {
+    padding-top: 60px;
+}
+
+.blog__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+}
+
+.blog__item {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.blog__col {
+    border: 1px solid #e7e7e7;
+    padding: 20px 20px 40px;
+    border-radius: 62px;
+    transition: background-color .2s;
+}
+
+.blog__col:hover {
+    background-color: var(--color-bg);
+}
+
+.blog__col:hover .blog__link-arrow {
+    background: #fff;
+}
+
+.blog__img {
+    position: relative;
+}
+
+.blog__img-link {
+    position: relative;
+}
+
+.blog__img-link img {
+    border-radius: 45px 45px 0 0;
+    width: 100%;
+}
+
+.blog__img-info_link {
+    position: absolute;
+    left: 7%;
+    top: auto;
+    right: auto;
+    bottom: 10%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px 8px 8px 0;
+    transition: background-color .2s;
+}
+
+.blog__img-info_link:hover {
+    background-color: var(--color-bg);
+}
+
+.blog__category {
+    font-family: var(--font-base);
+    font-weight: 400;
+}
+
+.blog__title-small {
+    font-size: 25px;
+    margin: 15px 0 10px;
+    transition: color .2s;
+}
+
+.blog__item-meta {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__link-arrow {
+    width: 50px;
+    height: 50px;
+    background: var(--color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background .2s;
+}
+
+.blog__title-small:hover {
+    color: var(--color-current);
+}
+
+.blog__title {
+    font-size: 48px;
+}
+
+.blog__paragraph {
+    font-size: 22px;
+}
+
+@media screen and (min-width: 1920px) {
+    .blog {
+        padding-top: 110px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .blog {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .blog__row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .blog__row {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,17 @@
+.author {
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    background: var(--color-bg);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.author__stamp {
+    text-align: center;
+}
+
+.author__name {
+    color: crimson;
+    font-family: 'DM Serif Display', serif;
+}
